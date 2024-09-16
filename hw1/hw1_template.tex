@@ -1,0 +1,121 @@
+\documentclass[10pt]{article}
+
+%%% Doc layout
+\usepackage{fullpage} 
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{graphicx}       % figure graphics
+\usepackage{microtype}      % microtypography
+\usepackage{parskip}
+\usepackage{times}
+
+
+%% Hyperlinks always black, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Math typesetting
+\usepackage{amsmath,amssymb}
+\usepackage{pythonhighlight} 
+
+%%% Write out problem statements in purple, solutions in black
+\usepackage{xcolor}
+\newcommand{\officialdirections}[1]{{\color{purple} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+%% --------------
+%% Header
+%% --------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{12.0pt}
+\fancyhf{}
+\fancyhead[C]{\ifnum\value{page}=1 CS 152 L3D - 2024f - HW1: Transfer Learning \else \fi}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+
+%% --------------
+%% Begin Document
+%% --------------
+\begin{document}
+
+~~\\ %% add vertical space
+
+{\Large{\bf HW1: [TODO YOUR NAME HERE] }}
+
+\Large{\bf Collaboration Statement:} TODO
+
+Total hours of human time: TODO
+
+Total hours of machine time: TODO
+
+
+~~\\
+~~\\
+Links: 
+\href{https://www.cs.tufts.edu/cs/152L3D/2024f/hw1.html}{[HW1 instructions]} 
+\href{https://www.cs.tufts.edu/cs/152L3D/2024f/index.html#collaboration}{[Course collaboration policy]} 
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\newpage
+
+\subsection{1a: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{1a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-a.jpg}
+     \label{fig:1a}
+\caption{
+TODO FIX IMAGE AND FILL CAPTION
+}%endcaption
+ \end{figure}
+
+\subsection{1b: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{1b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:1b}
+\caption{
+TODO FIX IMAGE AND FILL CAPTION
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+
+\subsection{2a: Solution}
+\renewcommand{\thefigure}{2a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-a.jpg}
+     \label{fig:2a}
+\caption{
+TODO FIX IMAGE AND FILL CAPTION
+}%endcaption
+ \end{figure}
+
+\subsection{2b: Solution}
+
+\begin{verbatim}
+    method      test acc
+    ------      --------
+    LP          0.??? # TODO FIXME
+    LP-then-FT  0.???
+\end{verbatim}
+
+TODO REFLECT ON METHOD RANKING
+
+
+\subsection{3a: Concept Question}
+
+TODO FILL HERE
+
+\end{document}
+
