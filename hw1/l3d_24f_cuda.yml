@@ -1,0 +1,26 @@
+name: l3d_2024f_cuda12_1
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python
+  - pip
+  - git
+  ## Scientific Computing
+  - numpy
+  - scipy
+  ## Visualization
+  - notebook
+  - matplotlib
+  - seaborn
+  ## Data I/O
+  - pandas
+  ## Machine Learning
+  - scikit-learn
+  ## PyTorch Autodiff
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu121
+    - torch
+    - torchvision
+    - torchinfo
+    - pytorchcv
