@@ -68,7 +68,7 @@ def make_birdsnap_data_loaders(
         os.path.join(root, 'train'), transform=transform,
         n_samples_per_class=n_samples_per_class_trainandvalid)
     birdsnap_test = BirdsnapDataset(
-        os.path.join(root, 'train'), transform=transform)
+        os.path.join(root, 'test'), transform=transform)
 
     # Stratified sampling for train and val
     tr_idx, val_idx = train_test_split(np.arange(len(birdsnap_dev)),
