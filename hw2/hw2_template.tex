@@ -1,0 +1,203 @@
+\documentclass[10pt]{article}
+
+%%% Doc layout
+\usepackage{fullpage} 
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{graphicx}       % figure graphics
+\usepackage{microtype}      % microtypography
+\usepackage{parskip}
+\usepackage{times}
+
+
+%% Hyperlinks always black, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Math typesetting
+\usepackage{amsmath,amssymb}
+\usepackage{pythonhighlight} 
+
+%%% Write out problem statements in purple, solutions in black
+\usepackage{xcolor}
+\newcommand{\officialdirections}[1]{{\color{purple} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+%% --------------
+%% Header
+%% --------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{12.0pt}
+\fancyhf{}
+\fancyhead[C]{\ifnum\value{page}=1 CS 152 L3D - 2024f - HW2: Semi-/Self-Supervised Learning \else \fi}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+
+%% --------------
+%% Begin Document
+%% --------------
+\begin{document}
+
+~~\\ %% add vertical space
+
+{\Large{\bf HW2: [TODO YOUR NAME HERE] }}
+
+\Large{\bf Collaboration Statement:} TODO
+
+Total hours of human time: TODO
+
+Total hours of machine time: TODO
+
+
+~~\\
+~~\\
+Links: 
+\href{https://www.cs.tufts.edu/cs/152L3D/2024f/hw2.html}{[HW2 instructions]} 
+\href{https://www.cs.tufts.edu/cs/152L3D/2024f/index.html#collaboration}{[Course collaboration policy]} 
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\newpage
+
+\subsection{1a: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{1a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-a.jpg}
+     \label{fig:1a}
+\caption{
+TODO FIX IMAGE. NO CAPTION NEEDED.
+}%endcaption
+ \end{figure}
+
+\subsection{1b: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{1b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:1b}
+\caption{
+TODO FIX IMAGE. NO CAPTION NEEDED.
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+\subsection{2a: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{2a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-a.jpg}
+     \label{fig:2a}
+\caption{
+TODO FIX IMAGE. NO CAPTION NEEDED.
+}%endcaption
+ \end{figure}
+
+\subsection{2b: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{2b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:2b}
+\caption{
+TODO FIX IMAGE. NO CAPTION NEEDED.
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+
+\subsection{2c: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{2c}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:2c}
+\caption{
+TODO FIX IMAGE. NO CAPTION NEEDED.
+}%endcaption
+ \end{figure}
+ 
+\subsection{2d: Short Answer}
+
+TODO FILL HERE
+
+\newpage
+
+\subsection{3a: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{3a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-a.jpg}
+     \label{fig:3a}
+\caption{
+TODO FIX IMAGE and FILL CAPTION.
+}%endcaption
+ \end{figure}
+
+\subsection{3b: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{3b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:3b}
+\caption{
+TODO FIX IMAGE and FILL CAPTION.
+}%endcaption
+ \end{figure}
+
+\newpage
+
+\subsection{3c: Figure}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{3c}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[height=.4\textwidth]{example-image-b.jpg}
+     \label{fig:3c}
+\caption{
+TODO FIX IMAGE and FILL CAPTION.
+}%endcaption
+ \end{figure}
+
+\newpage % PLEASE MAKE THIS STAY ON ITS OWN PAGE
+\subsection{4a: RESULTS TABLE}
+
+\begin{verbatim}
+    method      test xent    test acc
+    ------      ---------    --------
+    1b super      0.???        0.???
+    2c pseudo     0.???        0.???
+    3c simclr     0.???        0.???
+\end{verbatim}
+
+TODO REFLECT ON METHOD RANKING
+
+
+\newpage % PLEASE MAKE THIS STAY ON ITS OWN PAGE
+\subsection{4b: CODE for \texttt{calc\_simclr\_loss}}
+
+\begin{python}
+def calc_simclr_loss__forloop(z_left_ND, z_right_ND, temp):
+    """ Compute contrastive loss (naive version using for loops).
+    """
+    # >>>
+    # >>> TODO YOUR CODE GOES HERE <<<
+    # >>>
+    return 0.0
+\end{python}
+
+\end{document}
+

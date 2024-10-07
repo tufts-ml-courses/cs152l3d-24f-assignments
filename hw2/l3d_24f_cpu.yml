@@ -1,0 +1,26 @@
+name: l3d_2024f_cpu
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python>=3.10
+  - pip
+  - git
+  ## Scientific Computing
+  - numpy>=1.23
+  - scipy>=1.10
+  ## Visualization
+  - notebook>=6.5
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  ## Data I/O
+  - pandas>=1.5
+  ## Machine Learning
+  - scikit-learn>=1.2
+  ## PyTorch Autodiff
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cpu
+    - torch
+    - torchvision
+    - torchinfo
+    - pytorchcv
